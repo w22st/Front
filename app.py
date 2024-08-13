@@ -7,6 +7,7 @@ from Models import User
 app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
+
 def login_view():
     if request.method == 'GET':
         return render_template("login.html")
